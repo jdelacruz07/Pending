@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 
-public interface PendInterface extends MongoRepository<Pending, Short>  {
+public interface PendingInterface extends MongoRepository<Pending, String>  {
+
+	
 
 }
