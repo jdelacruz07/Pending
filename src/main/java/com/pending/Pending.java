@@ -3,11 +3,11 @@ package com.pending;
 import org.springframework.data.annotation.Id;
 
 public class Pending {
-	
+
 	@Id
 	private String id;
 	private String pending;
-	
+
 	public Pending() {
 		super();
 	}
@@ -32,9 +32,5 @@ public class Pending {
 	public void setPending(String pending) {
 		this.pending = pending;
 	}
-	
-	
-	
-	
 
 }
