@@ -17,7 +17,9 @@ public class SecurityConfiguration {
 	public UserDetailsService userDetailsService() {
 		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 		manager.createUser(
-				User.withDefaultPasswordEncoder().username("user").password("password").roles("ADMIN").build());
+				User.withDefaultPasswordEncoder().username("Julio").password("password").roles("ADMIN").build());
+		manager.createUser(
+				User.withDefaultPasswordEncoder().username("Teresita").password("password").roles("ADMIN").build());
 		return manager;
 	}
 
